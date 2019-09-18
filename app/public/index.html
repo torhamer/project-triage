@@ -26,14 +26,35 @@
       </ul>
     </div>
   </nav>
-
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="name" class="form-control" id="inputFirstName" v-model="formPatient.firstName">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="name" class="form-control" id="inputLastName"v-model="formPatient.lastName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputDOB">Date of Birth</label>
+      <input type="date" class="form-control" id="inputDOB" v-model="formPatient.dob">
+    </div>
+    <div class="form-group">
+      <label for="inputSex">Sex at Birth</label>
+      <input type="text" class="form-control" id="inputSex" v-model="formPatient.sexAtBirth">
+    </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
   <div class="container">
     <div class="row">
       <div id="mainContent" class="col">
         <div id="patientRecordApp">
-          <form>
 
-          </form>
+
           <table class="table table-sm table-hover">
             <thead>
               <th>First</th>
@@ -68,29 +89,6 @@
       </div>
     </div>
   </div>
-  <form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputFirstName">First Name</label>
-        <input type="name" class="form-control" id="inputFirstName">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputLastName">Last Name</label>
-        <input type="name" class="form-control" id="inputLastName">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputDOB">Date of Birth</label>
-      <input type="date" class="form-control" id="inputDOB">
-    </div>
-    <div class="form-group">
-      <label for="inputSex">Sex at Birth</label>
-      <input type="text" class="form-control" id="inputSex">
-    </div>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/waiting.app.js"></script>
   <script src="js/record.app.js"></script>
